@@ -62,12 +62,14 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         fresh: {
-          green: "hsl(var(--fresh-green))",
-          "green-light": "hsl(var(--fresh-green-light))",
-          "green-dark": "hsl(var(--fresh-green-dark))",
-          lime: "hsl(var(--fresh-lime))",
-          "lime-light": "hsl(var(--fresh-lime-light))",
-          leaf: "hsl(var(--fresh-leaf))",
+          primary: "hsl(var(--fresh-primary))",
+          secondary: "hsl(var(--fresh-secondary))",
+          beige: "hsl(var(--fresh-beige))",
+        },
+        liquor: {
+          brown: "hsl(var(--liquor-brown))",
+          gold: "hsl(var(--liquor-gold))",
+          charcoal: "hsl(var(--liquor-charcoal))",
         },
       },
       borderRadius: {
