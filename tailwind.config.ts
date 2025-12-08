@@ -65,11 +65,9 @@ export default {
           green: "hsl(var(--fresh-green))",
           "green-light": "hsl(var(--fresh-green-light))",
           "green-dark": "hsl(var(--fresh-green-dark))",
-          cream: "hsl(var(--fresh-cream))",
-          gold: "hsl(var(--fresh-gold))",
-          "gold-dark": "hsl(var(--fresh-gold-dark))",
+          lime: "hsl(var(--fresh-lime))",
+          "lime-light": "hsl(var(--fresh-lime-light))",
           leaf: "hsl(var(--fresh-leaf))",
-          brown: "hsl(var(--fresh-brown))",
         },
       },
       borderRadius: {
