@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Leaf, Apple, Carrot } from "lucide-react";
+import { Leaf, Apple, Carrot } from "lucide-react";
 
 import fruitsImage from "@/assets/fruits-category.jpg";
 import vegetablesImage from "@/assets/vegetables-category.jpg";
@@ -128,20 +128,10 @@ const Products = () => {
                     </span>
                   </div>
                   <div className="p-6">
-                    <p className="text-sm text-muted-foreground mb-1">{product.category}</p>
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                    <h3 className="font-display text-xl font-semibold text-foreground">
                       {product.name}
                     </h3>
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <span className="text-2xl font-bold text-primary">${product.price}</span>
-                        <span className="text-sm text-muted-foreground ml-1">{product.unit}</span>
-                      </div>
-                      <Button variant="fresh" size="sm" className="gap-2">
-                        <ShoppingCart className="w-4 h-4" />
-                        Add
-                      </Button>
-                    </div>
+                    <span className="text-sm text-primary font-medium">{product.category}</span>
                   </div>
                 </div>
               ))}

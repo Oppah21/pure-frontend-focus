@@ -184,23 +184,19 @@ const Contact = () => {
                 </form>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="relative">
-                <div className="bg-muted rounded-2xl h-full min-h-[400px] flex items-center justify-center border border-border">
-                  <div className="text-center p-8">
-                    <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-                      Find Us Here
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      123 Fresh Market Street<br />
-                      Green Valley, CA 90210
-                    </p>
-                    <Button variant="outline" size="sm">
-                      Get Directions
-                    </Button>
-                  </div>
-                </div>
+              {/* Map */}
+              <div className="relative rounded-2xl overflow-hidden border border-border h-full min-h-[400px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203584424!2d-118.4912273!3d34.0195509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2sSanta%20Monica%2C%20CA!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, minHeight: "400px" }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Store Location"
+                  className="absolute inset-0"
+                ></iframe>
               </div>
             </div>
           </div>
