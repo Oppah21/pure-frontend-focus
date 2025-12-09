@@ -11,66 +11,71 @@ import driedFoodsImage from "@/assets/dried-foods-category.jpg";
 const products = [
   {
     id: 1,
-    name: "Fresh Organic Apples",
-    category: "Fruits",
-    price: 4.99,
-    unit: "per kg",
+    name: "Fresh Produce Bundle",
+    category: "Fresh Produce",
     image: fruitsImage,
-    badge: "Organic",
+    badge: "Fresh Daily",
   },
   {
     id: 2,
-    name: "Farm Fresh Carrots",
-    category: "Vegetables",
-    price: 2.49,
-    unit: "per kg",
+    name: "Dairy Essentials Pack",
+    category: "Dairy & Bakery",
     image: vegetablesImage,
-    badge: "Local",
+    badge: "Chilled",
   },
   {
     id: 3,
-    name: "Premium Mixed Nuts",
-    category: "Dried Foods",
-    price: 12.99,
-    unit: "per 500g",
-    image: driedFoodsImage,
-    badge: "Best Seller",
+    name: "Pantry Staples Collection",
+    category: "Pantry Essentials",
+    image: groceriesImage,
+    badge: "Best Value",
   },
   {
     id: 4,
-    name: "Organic Grocery Bundle",
-    category: "Groceries",
-    price: 29.99,
-    unit: "per bundle",
-    image: groceriesImage,
-    badge: "Value Pack",
+    name: "Snacks & Beverages Mix",
+    category: "Beverages & Snacks",
+    image: driedFoodsImage,
+    badge: "Popular",
   },
   {
     id: 5,
-    name: "Seasonal Fruit Box",
-    category: "Fruits",
-    price: 24.99,
-    unit: "per box",
-    image: fruitsImage,
-    badge: "Seasonal",
+    name: "Household Cleaning Kit",
+    category: "Household",
+    image: groceriesImage,
+    badge: "Essential",
   },
   {
     id: 6,
-    name: "Garden Vegetables Mix",
-    category: "Vegetables",
-    price: 8.99,
-    unit: "per kg",
+    name: "Frozen Foods Selection",
+    category: "Frozen",
     image: vegetablesImage,
-    badge: "Fresh",
+    badge: "Quick Meals",
+  },
+  {
+    id: 7,
+    name: "Fresh Meat & Poultry",
+    category: "Meat & Seafood",
+    image: fruitsImage,
+    badge: "Premium",
+  },
+  {
+    id: 8,
+    name: "Bakery Fresh Bread",
+    category: "Dairy & Bakery",
+    image: driedFoodsImage,
+    badge: "Baked Daily",
   },
 ];
 
 const categories = [
   { name: "All", icon: Leaf },
-  { name: "Fruits", icon: Apple },
-  { name: "Vegetables", icon: Carrot },
-  { name: "Dried Foods", icon: Leaf },
-  { name: "Groceries", icon: Leaf },
+  { name: "Fresh Produce", icon: Apple },
+  { name: "Dairy & Bakery", icon: Carrot },
+  { name: "Pantry Essentials", icon: Leaf },
+  { name: "Beverages & Snacks", icon: Leaf },
+  { name: "Household", icon: Leaf },
+  { name: "Frozen", icon: Leaf },
+  { name: "Meat & Seafood", icon: Leaf },
 ];
 
 const Products = () => {
@@ -85,7 +90,7 @@ const Products = () => {
               Our <span className="text-primary">Products</span>
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Discover our wide selection of fresh, organic produce sourced directly from local farms.
+              Discover our wide selection of quality products across all departments at great prices.
             </p>
           </div>
         </section>

@@ -50,17 +50,17 @@ const About = () => {
               About Us
             </span>
             <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-primary-foreground mt-3 mb-6">
-              Fresh From Farm<br />To Your Table
+              Your Trusted<br />Supermarket
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-6">
-              The Fresh Company was founded with a simple mission: to bring the freshest, 
-              highest-quality produce directly to your doorstep. We work closely with 
-              local farmers and trusted suppliers to ensure every fruit, vegetable, and 
-              grocery item meets our strict quality standards.
+              The Fresh Company supermarket was founded with a simple mission: to be your 
+              one-stop shop for all household needs. From fresh produce and dairy to 
+              pantry essentials and household items, we offer quality products at 
+              competitive prices.
             </p>
             <p className="text-primary-foreground/80 text-lg mb-8">
-              From premium Woolworths groceries to traditional dried foods, we curate 
-              the best selection for health-conscious families in Harare.
+              With multiple departments and thousands of products, we make shopping 
+              convenient and affordable for families across Harare.
             </p>
 
             {/* Highlights */}

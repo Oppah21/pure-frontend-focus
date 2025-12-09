@@ -7,28 +7,28 @@ import driedFoodsImage from "@/assets/dried-foods-category.jpg";
 const Categories = () => {
   const categories = [
     {
-      title: "Premium Fruits",
-      description: "Fresh, hand-picked fruits delivered from local farms daily.",
+      title: "Fresh Produce",
+      description: "Farm-fresh fruits and vegetables delivered daily.",
       image: fruitsImage,
-      items: "50+ varieties",
+      items: "100+ varieties",
     },
     {
-      title: "Fresh Vegetables",
-      description: "Organic vegetables straight from Harare's best farms.",
+      title: "Dairy & Bakery",
+      description: "Fresh milk, cheese, bread, and baked goods.",
       image: vegetablesImage,
-      items: "40+ varieties",
+      items: "80+ products",
     },
     {
-      title: "Woolworths Groceries",
-      description: "Curated selection of premium Woolworths products.",
+      title: "Pantry Essentials",
+      description: "Rice, pasta, oils, spices, and everyday groceries.",
       image: groceriesImage,
-      items: "200+ products",
+      items: "300+ products",
     },
     {
-      title: "Dried Foods",
-      description: "Traditional dried foods, nuts, and seeds for nutrition.",
+      title: "Beverages & Snacks",
+      description: "Drinks, juices, chips, and tasty treats for everyone.",
       image: driedFoodsImage,
-      items: "30+ varieties",
+      items: "150+ products",
     },
   ];
 
@@ -44,7 +44,7 @@ const Categories = () => {
             Shop by Category
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From farm-fresh produce to premium groceries, find everything you need for a healthy lifestyle.
+            From fresh produce to household essentials, find everything you need under one roof.
           </p>
         </div>
 
