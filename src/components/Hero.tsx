@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="text-center lg:text-left">
             {/* Category Tags */}
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
-              {["Premium Fruits", "Vegetables", "Woolworths Groceries", "Dried Foods"].map((tag, index) => (
+              {["Groceries", "Dairy & Bakery", "Beverages", "Fresh Produce"].map((tag, index) => (
                 <span
                   key={tag}
                   className="text-fresh-gold text-xs sm:text-sm font-semibold tracking-wider uppercase"
@@ -44,23 +44,23 @@ const Hero = () => {
 
             {/* Main Heading */}
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight animate-fade-up">
-              Freshness<br />
-              Delivered Daily
+              Your One-Stop<br />
+              Supermarket
             </h1>
 
             {/* Description */}
             <p className="text-primary-foreground/80 text-lg sm:text-xl max-w-xl mx-auto lg:mx-0 mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-              The Fresh Company brings the best of Harare's farms and trusted suppliers to your table. From daily fruit and vegetable deliveries to curated Woolworths groceries and traditional dried foods, we deliver consistency, nutrition and flavour — every day.
+              The Fresh Company supermarket brings you everything you need under one roof. From fresh produce and dairy to household essentials and beverages, we offer quality products at great prices — every day.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
               <Button variant="accent" size="xl" className="group">
-                Explore Woolworths Range
+                Shop Weekly Deals
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="hero" size="xl">
-                View All Products
+                Browse All Products
               </Button>
             </div>
 
@@ -84,7 +84,7 @@ const Hero = () => {
             <div className="relative">
               <img
                 src={heroProduce}
-                alt="Fresh organic vegetables and fruits"
+                alt="Fresh supermarket products"
                 className="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]"
               />
               {/* Floating badge */}

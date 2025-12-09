@@ -9,31 +9,31 @@ import heroImage from "@/assets/hero-produce.jpg";
 const values = [
   {
     icon: Leaf,
-    title: "100% Organic",
-    description: "All our products are certified organic, grown without harmful pesticides or chemicals.",
+    title: "Quality Products",
+    description: "We source the best products from trusted suppliers to ensure top quality.",
   },
   {
     icon: Users,
-    title: "Community First",
-    description: "We support local farmers and invest in sustainable agricultural practices.",
+    title: "Customer First",
+    description: "Your satisfaction is our priority with friendly service and great prices.",
   },
   {
     icon: Award,
-    title: "Quality Guaranteed",
-    description: "Every product goes through rigorous quality checks before reaching you.",
+    title: "Wide Selection",
+    description: "Thousands of products across all departments to meet your every need.",
   },
   {
     icon: Truck,
-    title: "Fast Delivery",
-    description: "From farm to your doorstep within 24 hours to ensure maximum freshness.",
+    title: "Convenient Shopping",
+    description: "Easy access, ample parking, and home delivery options available.",
   },
 ];
 
 const milestones = [
-  { year: "2010", title: "Founded", description: "Started as a small family farm stand" },
-  { year: "2015", title: "Expansion", description: "Opened our first retail location" },
-  { year: "2020", title: "Going Digital", description: "Launched online ordering platform" },
-  { year: "2024", title: "Community Leader", description: "Serving 10,000+ families weekly" },
+  { year: "2010", title: "Founded", description: "Started as a neighborhood grocery store" },
+  { year: "2015", title: "Expansion", description: "Opened our full supermarket location" },
+  { year: "2020", title: "Going Digital", description: "Launched online ordering and delivery" },
+  { year: "2024", title: "Community Hub", description: "Serving 10,000+ families weekly" },
 ];
 
 const About = () => {
@@ -52,14 +52,14 @@ const About = () => {
                   Our Story
                 </span>
                 <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-                  Fresh From the Farm,{" "}
-                  <span className="text-primary">Straight to Your Table</span>
+                  Your Neighborhood{" "}
+                  <span className="text-primary">Supermarket</span>
                 </h1>
                 <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-                  For over a decade, The Fresh Company has been dedicated to bringing the freshest, 
-                  highest-quality produce to families across the region. What started as a small 
-                  family farm has grown into a community-focused business committed to sustainable 
-                  farming and healthy living.
+                  For over a decade, The Fresh Company supermarket has been dedicated to serving 
+                  families with quality products at great prices. What started as a small grocery 
+                  store has grown into a full-service supermarket committed to convenience, 
+                  variety, and customer satisfaction.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link to="/products">
@@ -136,7 +136,7 @@ const About = () => {
                 Our <span className="text-primary">Journey</span>
               </h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                From humble beginnings to becoming your trusted fresh produce partner.
+                From humble beginnings to becoming your trusted neighborhood supermarket.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -165,12 +165,12 @@ const About = () => {
                 </h2>
                 <ul className="space-y-4">
                   {[
-                    "Locally sourced from trusted farms",
-                    "Same-day harvest to delivery",
-                    "No artificial preservatives",
-                    "Eco-friendly packaging",
-                    "Satisfaction guaranteed",
-                    "Competitive pricing",
+                    "Wide variety of products",
+                    "Competitive everyday prices",
+                    "Fresh produce daily",
+                    "Convenient store hours",
+                    "Friendly customer service",
+                    "Home delivery available",
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
@@ -186,10 +186,10 @@ const About = () => {
                 </div>
                 <div className="bg-card p-6 rounded-2xl border border-border text-center">
                   <p className="text-4xl font-bold text-primary">50+</p>
-                  <p className="text-muted-foreground text-sm mt-1">Partner Farms</p>
+                  <p className="text-muted-foreground text-sm mt-1">Trusted Suppliers</p>
                 </div>
                 <div className="bg-card p-6 rounded-2xl border border-border text-center">
-                  <p className="text-4xl font-bold text-primary">200+</p>
+                  <p className="text-4xl font-bold text-primary">5000+</p>
                   <p className="text-muted-foreground text-sm mt-1">Products</p>
                 </div>
                 <div className="bg-card p-6 rounded-2xl border border-border text-center">
