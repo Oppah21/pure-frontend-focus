@@ -86,35 +86,6 @@ const Products = () => {
           </div>
         </section>
 
-        {/* What We Offer Section */}
-        <section className="py-16 bg-primary">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-10">
-              What We Offer
-            </h2>
-            <div className="max-w-xl mx-auto space-y-4">
-              {[
-                "Premium quality products",
-                "Trusted brand reliability",
-                "Wide range of pantry essentials",
-                "Specialty gourmet items",
-                "Fresh daily produce",
-                "Competitive everyday prices",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-card rounded-full px-6 py-4 flex items-center gap-4 shadow-lg"
-                >
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <span className="text-foreground font-medium">{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Products Grid */}
         <section className="py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -140,6 +111,35 @@ const Products = () => {
                     </h3>
                     <span className="text-sm text-primary font-medium">{product.category}</span>
                   </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* What We Offer Section */}
+        <section className="py-16 bg-primary">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-10">
+              What We Offer
+            </h2>
+            <div className="max-w-xl mx-auto space-y-4">
+              {[
+                "Premium quality products",
+                "Trusted brand reliability",
+                "Wide range of pantry essentials",
+                "Specialty gourmet items",
+                "Fresh daily produce",
+                "Competitive everyday prices",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-card rounded-full px-6 py-4 flex items-center gap-4 shadow-lg"
+                >
+                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <span className="text-foreground font-medium">{item}</span>
                 </div>
               ))}
             </div>
