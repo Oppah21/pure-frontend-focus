@@ -43,19 +43,20 @@ const About = () => {
       <main className="pt-24 pb-16">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <div className="absolute inset-0 bg-primary/10"></div>
+          <div className="absolute inset-0 bg-primary">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80" />
+          </div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <span className="inline-flex items-center gap-2 bg-secondary/20 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <span className="inline-flex items-center gap-2 bg-primary-foreground/10 text-primary-foreground px-4 py-2 rounded-full text-sm font-medium mb-6">
                   <Leaf className="w-4 h-4" />
                   Our Story
                 </span>
-                <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-                  Your Neighborhood{" "}
-                  <span className="text-primary">Supermarket</span>
+                <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-6">
+                  Your Neighborhood Supermarket
                 </h1>
-                <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+                <p className="text-primary-foreground/80 text-lg mb-8 leading-relaxed">
                   For over a decade, The Fresh Company supermarket has been dedicated to serving 
                   families with quality products at great prices. What started as a small grocery 
                   store has grown into a full-service supermarket committed to convenience, 
