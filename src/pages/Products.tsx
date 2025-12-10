@@ -1,7 +1,5 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { Leaf, Apple, Carrot } from "lucide-react";
 
 import fruitsImage from "@/assets/fruits-category.jpg";
 import vegetablesImage from "@/assets/vegetables-category.jpg";
@@ -67,49 +65,23 @@ const products = [
   },
 ];
 
-const categories = [
-  { name: "All", icon: Leaf },
-  { name: "Fresh Produce", icon: Apple },
-  { name: "Dairy & Bakery", icon: Carrot },
-  { name: "Pantry Essentials", icon: Leaf },
-  { name: "Beverages & Snacks", icon: Leaf },
-  { name: "Household", icon: Leaf },
-  { name: "Frozen", icon: Leaf },
-  { name: "Meat & Seafood", icon: Leaf },
-];
-
 const Products = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <main className="pt-24 pb-16">
         {/* Hero Section */}
-        <section className="bg-primary/5 py-16">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Our <span className="text-primary">Products</span>
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-primary">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80" />
+          </div>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+              Our Products
             </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
               Discover our wide selection of quality products across all departments at great prices.
             </p>
-          </div>
-        </section>
-
-        {/* Categories Filter */}
-        <section className="py-8 border-b border-border">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-wrap justify-center gap-4">
-              {categories.map((category) => (
-                <Button
-                  key={category.name}
-                  variant={category.name === "All" ? "fresh" : "outline"}
-                  className="gap-2"
-                >
-                  <category.icon className="w-4 h-4" />
-                  {category.name}
-                </Button>
-              ))}
-            </div>
           </div>
         </section>
 

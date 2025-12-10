@@ -58,12 +58,15 @@ const Contact = () => {
       <Header />
       <main className="pt-24 pb-16">
         {/* Hero Section */}
-        <section className="bg-primary/5 py-16">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Get in <span className="text-primary">Touch</span>
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0 bg-primary">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80" />
+          </div>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-primary-foreground mb-4">
+              Get in Touch
             </h1>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto">
               Have questions about our products or services? We'd love to hear from you.
               Our team is ready to help!
             </p>
