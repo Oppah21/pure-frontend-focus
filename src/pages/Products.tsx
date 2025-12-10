@@ -134,11 +134,9 @@ const Products = () => {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="bg-card rounded-full px-6 py-4 flex items-center gap-4 shadow-lg"
+                  className="bg-card rounded-full px-5 py-3 flex items-center gap-4 shadow-md"
                 >
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
-                    <CheckCircle className="w-6 h-6 text-primary-foreground" />
-                  </div>
+                  <CheckCircle className="w-7 h-7 text-primary flex-shrink-0" />
                   <span className="text-foreground font-medium">{item}</span>
                 </div>
               ))}
