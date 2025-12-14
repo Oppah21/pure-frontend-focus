@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import LiquorHeader from "@/components/LiquorHeader";
+import LiquorFooter from "@/components/LiquorFooter";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Wine, GlassWater } from "lucide-react";
 import liquorHero from "@/assets/liquor-hero.jpg";
@@ -57,7 +57,7 @@ const Liquor = () => {
 
   return (
     <div className="min-h-screen bg-liquor-charcoal">
-      <Header />
+      <LiquorHeader />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -97,9 +97,9 @@ const Liquor = () => {
       </section>
 
       {/* Our Collection Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-liquor-charcoal text-center mb-16">
             Our Collection
           </h2>
 
@@ -118,10 +118,10 @@ const Liquor = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-liquor-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                <h3 className="font-display text-xl font-semibold text-liquor-charcoal mb-2">
                   {category.name}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-liquor-brown/70 text-sm leading-relaxed">
                   {category.description}
                 </p>
               </div>
@@ -131,12 +131,12 @@ const Liquor = () => {
       </section>
 
       {/* Signature Cocktails Section */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-20 bg-stone-100">
         <div className="container mx-auto px-4">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground text-center mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-liquor-charcoal text-center mb-4">
             Signature Cocktails
           </h2>
-          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-16">
+          <p className="text-liquor-brown/70 text-center max-w-2xl mx-auto mb-16">
             Classic recipes made with our premium spirits
           </p>
 
@@ -144,16 +144,16 @@ const Liquor = () => {
             {signatureCocktails.map((cocktail, index) => (
               <div
                 key={cocktail.name}
-                className="bg-card rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-up"
+                className="bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-up"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="w-16 h-16 bg-liquor-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <cocktail.icon className="w-8 h-8 text-liquor-gold" />
                 </div>
-                <h3 className="font-display text-xl font-semibold text-foreground mb-3">
+                <h3 className="font-display text-xl font-semibold text-liquor-charcoal mb-3">
                   {cocktail.name}
                 </h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-liquor-brown/70 text-sm">
                   {cocktail.ingredients}
                 </p>
               </div>
@@ -181,7 +181,7 @@ const Liquor = () => {
         </div>
       </section>
 
-      <Footer />
+      <LiquorFooter />
     </div>
   );
 };
