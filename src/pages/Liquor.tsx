@@ -1,7 +1,8 @@
-import LiquorHeader from "@/components/LiquorHeader";
-import LiquorFooter from "@/components/LiquorFooter";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Wine, GlassWater } from "lucide-react";
+import { Link } from "react-router-dom";
 import liquorHero from "@/assets/liquor-hero.jpg";
 import whiskeyCategory from "@/assets/whiskey-category.jpg";
 import wineCategory from "@/assets/wine-category.jpg";
@@ -57,7 +58,7 @@ const Liquor = () => {
 
   return (
     <div className="min-h-screen bg-liquor-charcoal">
-      <LiquorHeader />
+      <Header />
 
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
@@ -181,7 +182,7 @@ const Liquor = () => {
         </div>
       </section>
 
-      <LiquorFooter />
+      <Footer />
     </div>
   );
 };
