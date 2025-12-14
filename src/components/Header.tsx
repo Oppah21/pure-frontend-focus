@@ -48,9 +48,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="fresh" size="lg">
-              Order Now
-            </Button>
+            <Link to="/liquor">
+              <Button size="lg" className="bg-liquor-brown text-white hover:bg-liquor-brown/90 rounded-full font-semibold">
+                Freshco Liquor
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -84,9 +86,9 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link to="/products">
-                <Button variant="fresh" className="mt-2 w-full">
-                  Order Now
+              <Link to="/liquor">
+                <Button className="mt-2 w-full bg-liquor-brown text-white hover:bg-liquor-brown/90 rounded-full font-semibold">
+                  Freshco Liquor
                 </Button>
               </Link>
             </nav>
