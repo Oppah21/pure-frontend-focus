@@ -1,9 +1,11 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Categories from "@/components/Categories";
+import FreshProduceHighlights from "@/components/FreshProduceHighlights";
+import WoolworthsSelection from "@/components/WoolworthsSelection";
+import DriedFoodsPantry from "@/components/DriedFoodsPantry";
 import Features from "@/components/Features";
-import About from "@/components/About";
-import CTA from "@/components/CTA";
+import ServicesOverview from "@/components/ServicesOverview";
+import LiquorHighlight from "@/components/LiquorHighlight";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,10 +14,12 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <Categories />
+        <FreshProduceHighlights />
+        <WoolworthsSelection />
+        <DriedFoodsPantry />
         <Features />
-        <About />
-        <CTA />
+        <ServicesOverview />
+        <LiquorHighlight />
       </main>
       <Footer />
     </div>
