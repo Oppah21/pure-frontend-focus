@@ -11,6 +11,7 @@ const Header = () => {
     { name: "Home", href: "/" },
     { name: "Products", href: "/products" },
     { name: "Woolworths", href: "/woolworths" },
+    { name: "Dried Foods", href: "/dried-foods" },
     { name: "Liquor", href: "/liquor" },
     { name: "About Us", href: "/about" },
     { name: "Contact", href: "/contact" },
