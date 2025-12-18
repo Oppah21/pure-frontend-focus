@@ -17,11 +17,6 @@ const Liquor = () => {
       image: whiskeyCategory,
     },
     {
-      name: "Wine",
-      description: "Exquisite reds, whites, and rosés from renowned vineyards globally.",
-      image: wineCategory,
-    },
-    {
       name: "Gin",
       description: "Artisanal gins infused with botanicals for the perfect cocktail.",
       image: ginCategory,
@@ -30,6 +25,21 @@ const Liquor = () => {
       name: "Vodka",
       description: "Crystal-clear premium vodkas, distilled to perfection.",
       image: vodkaCategory,
+    },
+    {
+      name: "Wine",
+      description: "Exquisite reds, whites, and rosés from renowned vineyards globally.",
+      image: wineCategory,
+    },
+    {
+      name: "Liqueurs",
+      description: "Rich, sweet spirits perfect for sipping or crafting signature cocktails.",
+      image: wineCategory,
+    },
+    {
+      name: "Cocktail Spirits",
+      description: "Essential mixers and specialty spirits for the home bartender.",
+      image: ginCategory,
     },
   ];
 
