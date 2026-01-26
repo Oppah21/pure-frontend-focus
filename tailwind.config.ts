@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Playfair Display", "Georgia", "serif"],
+        display: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,6 +51,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -61,15 +69,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        fresh: {
-          primary: "hsl(var(--fresh-primary))",
-          secondary: "hsl(var(--fresh-secondary))",
-          beige: "hsl(var(--fresh-beige))",
-        },
-        liquor: {
-          brown: "hsl(var(--liquor-brown))",
-          gold: "hsl(var(--liquor-gold))",
-          charcoal: "hsl(var(--liquor-charcoal))",
+        ride: {
+          blue: "hsl(var(--ride-blue))",
+          teal: "hsl(var(--ride-teal))",
+          navy: "hsl(var(--ride-navy))",
         },
       },
       borderRadius: {

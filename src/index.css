@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,100 +6,106 @@
 
 @layer base {
   :root {
-    /* The Fresh Company Brand Colors */
-    --background: 38 33% 95%; /* #F6F3EE - Natural Soft Beige */
-    --foreground: 123 46% 20%;
+    /* Click and Ride Brand Colors - Modern, Trustworthy, Dynamic */
+    --background: 210 20% 98%; /* Light grayish blue */
+    --foreground: 222 47% 11%;
 
-    --card: 0 0% 100%; /* #FFFFFF */
-    --card-foreground: 123 46% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 123 46% 20%;
+    --popover-foreground: 222 47% 11%;
 
-    /* Primary Green - #2E7D32 */
-    --primary: 123 46% 34%;
+    /* Primary Blue - Trust & Reliability */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary Green (Light Green) - #8BC34A */
-    --secondary: 88 50% 53%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Soft Blue */
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 38 20% 90%;
-    --muted-foreground: 123 30% 35%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    /* Accent - using secondary green for consistency */
-    --accent: 88 50% 53%;
+    /* Accent - Vibrant Teal */
+    --accent: 172 66% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 38 20% 85%;
-    --input: 38 20% 85%;
-    --ring: 123 46% 34%;
+    /* Success Green */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning Orange */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
-    /* Brand colors - The Fresh Company */
-    --fresh-primary: 123 46% 34%; /* #2E7D32 */
-    --fresh-secondary: 88 50% 53%; /* #8BC34A */
-    --fresh-beige: 38 33% 95%; /* #F6F3EE */
-    
-    /* Brand colors - Liquor */
-    --liquor-brown: 25 47% 25%; /* #5C3A21 */
-    --liquor-gold: 31 45% 60%; /* #C49A6C */
-    --liquor-charcoal: 0 1% 13%; /* #222121 */
+    /* Click and Ride specific */
+    --ride-blue: 217 91% 60%;
+    --ride-teal: 172 66% 50%;
+    --ride-navy: 222 47% 11%;
 
     --sidebar-background: 0 0% 100%;
-    --sidebar-foreground: 123 46% 20%;
-    --sidebar-primary: 123 46% 34%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 38 33% 95%;
-    --sidebar-accent-foreground: 123 46% 20%;
-    --sidebar-border: 38 20% 85%;
-    --sidebar-ring: 123 46% 34%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 217 91% 60%;
   }
 
-  /* Dark mode / Liquor theme */
   .dark {
-    --background: 0 1% 13%; /* #222121 - Charcoal */
-    --foreground: 0 0% 95%;
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
 
-    --card: 25 35% 12%;
-    --card-foreground: 0 0% 95%;
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 25 35% 12%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
 
-    /* Warm Brown - #5C3A21 */
-    --primary: 25 47% 25%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    /* Gold Accent - #C49A6C */
-    --secondary: 31 45% 60%;
-    --secondary-foreground: 0 1% 13%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 25 30% 18%;
-    --muted-foreground: 31 30% 70%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 31 45% 60%;
-    --accent-foreground: 0 1% 13%;
+    --accent: 172 66% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 25 25% 22%;
-    --input: 25 25% 22%;
-    --ring: 31 45% 60%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
 
-    --sidebar-background: 0 1% 10%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 31 45% 60%;
-    --sidebar-primary-foreground: 0 1% 13%;
-    --sidebar-accent: 25 30% 18%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 25 25% 22%;
-    --sidebar-ring: 31 45% 60%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 217 91% 60%;
+
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 33% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 33% 17%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 
@@ -113,57 +119,54 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-display font-bold;
   }
 }
 
 @layer components {
-  .btn-fresh {
-    @apply bg-accent text-accent-foreground px-8 py-4 rounded-full font-semibold 
+  .btn-ride {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold 
            transition-all duration-300 hover:scale-105 hover:shadow-lg
-           hover:shadow-accent/30;
+           hover:shadow-primary/25;
   }
 
-  .card-fresh {
-    @apply bg-card rounded-2xl shadow-lg overflow-hidden 
+  .card-ride {
+    @apply bg-card rounded-2xl shadow-md border border-border overflow-hidden 
            transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
 
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary to-fresh-leaf bg-clip-text text-transparent;
+  .input-ride {
+    @apply bg-background border border-border rounded-xl px-4 py-3 
+           focus:ring-2 focus:ring-primary focus:border-transparent
+           transition-all duration-200;
   }
 
   .section-padding {
     @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
   }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-lg border border-border/50 rounded-2xl;
+  }
 }
 
 @layer utilities {
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
   .animate-fade-up {
-    animation: fadeUp 0.8s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
   }
 
-  .animate-scale-in {
-    animation: scaleIn 0.5s ease-out forwards;
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
   }
 
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
   }
 
   @keyframes fadeUp {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
@@ -171,14 +174,23 @@
     }
   }
 
-  @keyframes scaleIn {
+  @keyframes fadeIn {
     from {
       opacity: 0;
-      transform: scale(0.9);
     }
     to {
       opacity: 1;
-      transform: scale(1);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }
